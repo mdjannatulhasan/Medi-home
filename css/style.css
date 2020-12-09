@@ -1,0 +1,14 @@
+/************************/
+/******** header ********/
+/************************/
+.call{
+    padding-right: 20px;
+}
+.lefth{
+    overflow: hidden;
+    float: left;
+}
+.rightHeader{
+    overflow: hidden;
+    float: right;
+}
