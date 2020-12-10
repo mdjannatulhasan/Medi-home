@@ -17,11 +17,10 @@ $('.main-content .owl-carousel').owlCarousel({
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     loop: true,
-    margin: 10,
     nav: true,
     navText: [
-        'PRVE',
-        'NEXT',
+        '<div style="font-size:20px; padding: 8px 20px;letter-spacing: 2px;"><div>PR</div><div style="margin-top:-10px;">EV</div></div>',
+        '<div style="font-size:20px; padding: 8px 20px;letter-spacing: 2px;"><div>NE</div><div style="margin-top:-10px;">XT</div></div>',
     ],
     navContainer: '.main-content .custom-nav',
     responsive:{
