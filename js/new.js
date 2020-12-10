@@ -13,6 +13,9 @@
 $('.main-content .owl-carousel').owlCarousel({
     items:1,
     // stagePadding: 50,
+    autoplay:true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
     loop: true,
     margin: 10,
     nav: true,
