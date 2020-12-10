@@ -36,7 +36,7 @@ $('.main-content .owl-carousel').owlCarousel({
     }
 });
 
-<script>
+
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
 function mischandler(){
@@ -50,4 +50,3 @@ function mousehandler(e){
 document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
-</script>
