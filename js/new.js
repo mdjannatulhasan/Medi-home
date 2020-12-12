@@ -1,18 +1,5 @@
-// $(document).ready(function(){
-//     $('.your-class').slick({
-//         prevArrow:'.arrow_prev',
-//         nextArrow:'.arrow_next',
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//         arrow:true,
-//         dots:true,
-//     });
-//   });
 $('.main-content .owl-carousel').owlCarousel({
     items:1,
-    // stagePadding: 50,
     autoplay:true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
@@ -50,3 +37,17 @@ function mousehandler(e){
 document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
+
+/********** Masonry With Filter************/
+var $grid = $('.grid');
+$grid.isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+        columnWidth: '.grid-sizer'
+    }
+});
+$('.filter-button-group').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+});

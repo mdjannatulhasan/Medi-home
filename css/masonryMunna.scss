@@ -1,0 +1,35 @@
+$black: #ffffff;
+.grid{
+	background: $white;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+	
+}
+.grid-item{
+	float: left;
+	&:hover{
+		cursor:pointer;
+	}
+	
+}
+.grid-item img{
+	display: block;
+	max-width: 100%;
+	border: 10px solid white;
+	@media screen and (max-width: 414px){
+		border: 5px solid white;
+	}
+}
+
+.grid-item.grid-item__expanded {
+  width: 66.66%;
+  z-index: 2;
+}
