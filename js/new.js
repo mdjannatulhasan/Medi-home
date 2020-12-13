@@ -44,7 +44,7 @@ document.onmouseup = mousehandler;
 
 $('.team .owl-carousel').owlCarousel({
     items:4,
-    // autoplay:true,
+    autoplay:true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     loop: true,

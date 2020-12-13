@@ -417,7 +417,7 @@
     <!-- About Portfolio End -->
     <hr class="mt-5">
     <!-- About Team Start -->
-    <section class="team mt-5">
+    <section class="team mt-5" id="tMem">
         <div class="secHeader">
             <div class="headTitle">
                 <span class="coloredPart">about</span> medihome
@@ -436,7 +436,7 @@
                     <div class="memberImg">
                         <img src="images/h1/john.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails" id="memDt">
                         <div class="memberName">
                             john david
                         </div>
@@ -458,7 +458,7 @@
                     <div class="memberImg">
                         <img src="images/h1/team1.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails "id="memDt">
                         <div class="memberName">
                             alan stewart
                         </div>
@@ -480,7 +480,7 @@
                     <div class="memberImg">
                         <img src="images/h1/david.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails " id="memDt">
                         <div class="memberName">
                             david jone
                         </div>
@@ -502,7 +502,7 @@
                     <div class="memberImg">
                         <img src="images/h1/sara.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails" id="memDt">
                         <div class="memberName">
                             sara jones
                         </div>
@@ -524,7 +524,7 @@
                     <div class="memberImg">
                         <img src="images/h1/john.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails" id="memDt">
                         <div class="memberName">
                             john david
                         </div>
@@ -546,7 +546,7 @@
                     <div class="memberImg">
                         <img src="images/h1/sara.png" alt="">
                     </div>
-                    <div class="memberDetails">
+                    <div class="memberDetails" id="memDt">
                         <div class="memberName">
                             sara jones
                         </div>
@@ -562,6 +562,12 @@
                         </div>
                     </div>
                     <div class="teamBorder"></div>
+                </div>
+            </div>
+            <div class="owl-theme">
+                <div class="owl-controls">
+                    <div class="custom-nav owl-nav">
+                    </div>
                 </div>
             </div>
         </div>
@@ -987,10 +993,15 @@
     </script>
     <!-- /********** active setter *********/ -->
     <script>
-        var selector = '#activeSet button';
+        var selector1 = '#activeSet button';
+        var selector2 = '#tMem #memDt';
         
-        $(selector).on('click', function(){
-            $(selector).removeClass('active');
+        $(selector1).on('click', function(){
+            $(selector1).removeClass('active');
+            $(this).addClass('active');
+        });
+        $(selector2).on('click', function(){
+            $(selector2).removeClass('active');
             $(this).addClass('active');
         });
     </script>

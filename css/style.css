@@ -394,7 +394,8 @@
     position: relative;
 }
 .main-content1 img{
-    height: 300px;
+    height: 330px;
+    padding-left:20px ;
 }
 .main-content1 .owl-carousel{
     width: 100%;
@@ -451,17 +452,10 @@
     left: 0;
 }
 .main-content1 .owl-theme .owl-nav [class*=owl-] {
-    color: #FFF;
-    background: #256781;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 0;
-    margin:0 ;
+    display: none;
 }
 .main-content1 .owl-theme .owl-dots .owl-dot span{
-    background: rgb(247, 247, 255);
-    width: 5px;
-    height: 15px;
+    display: none;
 }
 .main-content1 .owl-theme .owl-dots{
     position: absolute;
@@ -473,15 +467,15 @@
     outline: none;
 }
 .main-content1 .owl-theme .owl-dots .owl-dot.active span{
-    background: rgb(75, 149, 233);
-    width: 6px;
-    height: 39px;
+    display: none;
 }
 
 /********** Team member details Part ***********/
 
 .teamMember{
     position: relative;
+    
+    cursor: pointer;
 }
 .memberName{
     font-family: 'Roboto Condensed', sans-serif;
@@ -526,10 +520,10 @@
 .team .backColor{
     content: none;
     background-color: #0fb0ee;
-    height:221px;
+    height:203px;
     width: 100%;
     position: absolute;
-    bottom: 5px;
+    bottom: 23px;
 }
 .team i{
     color: white;
@@ -538,4 +532,23 @@
 .memPara{
     color: #ffffff;
     font-size: 15px;
+}
+.memberDetails{
+    position: relative;
+}
+.teamMember .memberDetails:hover::before, .teamMember .active::before{
+    position: absolute;
+    content: '';
+    border-top: 5px solid rgb(255, 255, 255);
+    width: 100px;
+    top: -25px;
+    left: 53px;
+}
+.teamMember .memberDetails:hover::after, .teamMember .active::after{
+    position: absolute;
+    content: '';
+    border-top: 5px solid rgb(255, 255, 255);
+    width: 100px;
+    bottom: -29px;
+    left: 53px;
 }
