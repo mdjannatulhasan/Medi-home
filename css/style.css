@@ -92,17 +92,17 @@
 /************************/
 /******** Slider ********/
 /************************/
-.owl-carousel{
+.main-content .owl-carousel{
     width: 100%;
 }
-.owl-carousel .item{
+.main-content .owl-carousel .item{
     background-image: url("https://via.placeholder.com/1921x887/343739/575555");
     background-size: 100% 100% !important;
     background-position: center;
     background-repeat: no-repeat;
     padding: 16% 18%;
 }
-.owl-carousel .item h1{
+.main-content .owl-carousel .item h1{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 80px;
     color: white;
@@ -110,27 +110,27 @@
     text-transform: uppercase;
     /* margin-top: -20px; */
 }
-.owl-carousel .item h2{
+.main-content .owl-carousel .item h2{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 36px;
     color: white;
     font-weight: 400;
     text-transform: uppercase;
 }
-.owl-carousel .item p{
+.main-content .owl-carousel .item p{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #bbbbbb;
     font-weight: 400;
 }
-.slider{
+.main-content .slider{
     overflow: hidden;
     position: relative;
 }
 .main-content {
     position: relative;
 }
-.owl-theme .custom-nav {
+.main-content .owl-theme .custom-nav {
     position: absolute;
     top: 45%;
     left: 0;
@@ -140,7 +140,7 @@
     outline: none !important;
 }
 
-.owl-theme .custom-nav .owl-prev, .owl-theme .custom-nav .owl-next {
+.main-content .owl-theme .custom-nav .owl-prev,.main-content .owl-theme .custom-nav .owl-next {
     position: absolute;
     color: inherit;
     background: none;
@@ -148,14 +148,14 @@
     z-index: 100;
     right: 0;
 }
-.owl-theme .custom-nav .owl-prev, .owl-next{
+.main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-next{
     font-size: 2.5rem;
     color: #cecece;
 }
-.owl-theme .custom-nav .owl-prev {
+.main-content .owl-theme .custom-nav .owl-prev {
     left: 0;
 }
-.owl-theme .owl-nav [class*=owl-] {
+.main-content .owl-theme .owl-nav [class*=owl-] {
     color: #FFF;
     background: #256781;
     display: inline-block;
@@ -163,21 +163,21 @@
     border-radius: 0;
     margin:0 ;
 }
-.owl-theme .owl-dots .owl-dot span{
+.main-content .owl-theme .owl-dots .owl-dot span{
     background: rgb(247, 247, 255);
     width: 5px;
     height: 15px;
 }
-.owl-theme .owl-dots{
+.main-content .owl-theme .owl-dots{
     position: absolute;
     margin: auto;
     width: 100%;
     bottom: 2%;
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot:focus{
+.main-content .owl-carousel .owl-nav button.owl-next,.main-content .owl-carousel .owl-nav button.owl-prev,.main-content .owl-carousel button.owl-dot:focus{
     outline: none;
 }
-.owl-theme .owl-dots .owl-dot.active span{
+.main-content .owl-theme .owl-dots .owl-dot.active span{
     background: rgb(75, 149, 233);
     width: 6px;
     height: 39px;
@@ -367,9 +367,175 @@
     outline: none !important;
     display: block;
     text-transform: uppercase;
-    padding-top:10px ;
+    padding-top:20px ;
     background-color: white;
+    position: relative;
+    margin: auto;
 }
 #activeSet .active{
-    color: red;
+    color: #38b4e4;
+}
+.portfolio .active::after{
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #38b4e4;
+    width: 84px;
+    left: 111px;
+    bottom: 13px;
+}
+
+
+
+/*****************************/
+/******** Team Slider ********/
+/*****************************/
+.team{
+    
+    position: relative;
+}
+.main-content1 img{
+    height: 300px;
+}
+.main-content1 .owl-carousel{
+    width: 100%;
+}
+.main-content1 .owl-carousel .item{
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 16% 18%;
+}
+.main-content1 .owl-carousel .item h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* margin-top: -20px; */
+}
+.main-content1 .owl-carousel .item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+.main-content1 .slider{
+    overflow: hidden;
+    position: relative;
+}
+.main-content1 {
+    position: relative;
+}
+.main-content1 .owl-theme .custom-nav {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+.owl-theme .owl-nav  [class*=owl-]:focus {
+    outline: none !important;
+}
+
+.main-content1 .owl-theme .custom-nav .owl-prev,.main-content1 .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+    right: 0;
+}
+.main-content1 .owl-theme .custom-nav .owl-prev, .main-content1 .owl-next{
+    font-size: 2.5rem;
+    color: #cecece;
+}
+.main-content1 .owl-theme .custom-nav .owl-prev {
+    left: 0;
+}
+.main-content1 .owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    background: #256781;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0;
+    margin:0 ;
+}
+.main-content1 .owl-theme .owl-dots .owl-dot span{
+    background: rgb(247, 247, 255);
+    width: 5px;
+    height: 15px;
+}
+.main-content1 .owl-theme .owl-dots{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    bottom: 2%;
+}
+.main-content1 .owl-carousel .owl-nav button.owl-next,.main-content1 .owl-carousel .owl-nav button.owl-prev,.main-content1 .owl-carousel button.owl-dot:focus{
+    outline: none;
+}
+.main-content1 .owl-theme .owl-dots .owl-dot.active span{
+    background: rgb(75, 149, 233);
+    width: 6px;
+    height: 39px;
+}
+
+/********** Team member details Part ***********/
+
+.teamMember{
+    position: relative;
+}
+.memberName{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+.hrW{
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+    margin: auto;
+}
+.hrW .hr1, .hrW .hr2{
+    width: 50%;
+    float: left;
+}
+.hrW .hr1{
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.hrW .hr2{
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+.hrW hr{
+    color: rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    opacity: 1;
+    margin-top:7px ;
+    margin-bottom:20px ;
+}
+.hrW::before{
+    position: absolute;
+    content:url('../images/h1/Wtriangle.png');
+    left: 33px;
+    top: -5px;
+}
+.team .backColor{
+    content: none;
+    background-color: #0fb0ee;
+    height:221px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+.team i{
+    color: white;
+    margin: 20px 8px 0px 8px;
+}
+.memPara{
+    color: #ffffff;
+    font-size: 15px;
 }
