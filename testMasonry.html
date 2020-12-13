@@ -6,11 +6,11 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Bootstrap 101 Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/masonry2.css" rel="stylesheet">
 </head>
 <body>
     
-    <!--<div class="button-group filter-button-group">
+    <div class="button-group filter-button-group">
         <button data-filter="*">show all</button>
         <button data-filter=".metal">metal</button>
         <button data-filter=".transition">transition</button>
@@ -198,84 +198,43 @@
         });
         
     </script>
-    <div class="container">
-        <figure>
-          <img src="https://assets.codepen.io/12005/windmill.jpg" alt="A windmill" />
-          <figcaption><a href="#">1</a></figcaption>
-        </figure>
-        <figure class="landscape">
-          <img src="https://assets.codepen.io/12005/suspension-bridge.jpg" alt="The Clifton Suspension Bridge" />
-          <figcaption><a href="#">2</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
-          <figcaption><a href="#">3</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
-          <figcaption><a href="#">4</a></figcaption>
-        </figure>
-        <figure class="landscape">
-          <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="a single checked balloon" />
-          <figcaption><a href="#">5</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="a hot air balloon shaped like a dog" />
-          <figcaption><a href="#">6</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="View from a hot air balloon of other balloons" />
-          <figcaption><a href="#">7</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="a balloon fairground ride" />
-          <figcaption><a href="#">8</a></figcaption>
-        </figure>
-        <figure class="landscape">
-          <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="sunrise over a harbor" />
-          <figcaption><a href="#">9</a></figcaption>
-        </figure>
-        <figure>
-          <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="three hot air balloons in a blue sky" />
-          <figcaption><a href="#">10</a></figcaption>
-        </figure>
-        <figure>
-        <img src="https://assets.codepen.io/12005/toronto.jpg" alt="the Toronto light up sign at night" />
-          <figcaption><a href="#">11</a></figcaption>
-        </figure>
-      </div>-->
-      <div class="grid-layout">
-        <div class="grid-item grid-item-1">item 1</div>
-        <div class="grid-item grid-item-2">item 2</div>
-        <div class="grid-item span-3 grid-item-3">item 3</div>
-        <div class="grid-item grid-item-4">item 4</div>
-        <div class="grid-item span-2 grid-item-5">item 5</div>
-        <div class="grid-item grid-item-6">item 6</div>
-        <div class="grid-item grid-item-7">item 7</div>
-        <div class="grid-item grid-item-8">item 8</div>
-        <div class="grid-item grid-item-9">item 9</div>
-        <div class="grid-item span-2 grid-item-10">item 10</div>
-        <div class="grid-item grid-item-11">item 11</div>
-        <div class="grid-item grid-item-12">item 12</div>
-        <div class="grid-item span-2 grid-item-13">item 13</div>
-        <div class="grid-item grid-item-14">item 14</div>
-        <div class="grid-item grid-item-15">item 15</div>
-        <div class="grid-item grid-item-16">item 16</div>
-        <div class="grid-item span-3 grid-item-17">item 17</div>
-        <div class="grid-item grid-item-18">item 18</div>
-        <div class="grid-item grid-item-19">item 19</div>
-        <div class="grid-item grid-item-20">item 20</div>
-        <div class="grid-item span-2 grid-item-21">item 21</div>
-        <div class="grid-item grid-item-22">item 22</div>
-        <div class="grid-item grid-item-23">item 23</div>
-        <div class="grid-item grid-item-24">item 24</div>
-        <div class="grid-item grid-item-25">item 25</div>
-        <div class="grid-item span-3 grid-item-26">item 26</div>
-        <div class="grid-item grid-item-27">item 27</div>
-        <div class="grid-item grid-item-28">item 28</div>
-        <div class="grid-item grid-item-29">item 29</div>
-        <div class="grid-item grid-item-30">item 30</div>
-        <div class="grid-item grid-item-31">item 31</div>
+    <!--<div class="button-group filter-button-group">
+        <button data-filter="*">show all</button>
+        <button data-filter=".metal">metal</button>
+        <button data-filter=".transition">transition</button>
+    </div>
+    <div class="grid">
+        <div class="grid-item grid-item-1 transition" data-category="transition"><div class="grid-item-content">item 1</div></div>
+        <div class="grid-item grid-item-2"><div class="grid-item-content">item 2</div></div>
+        <div class="grid-item span-3 grid-item-3"><div class="grid-item-content">item 3</div></div>
+        <div class="grid-item grid-item-4"><div class="grid-item-content">item 4</div></div>
+        <div class="grid-item span-2 grid-item-5"><div class="grid-item-content">item 5</div></div>
+        <div class="grid-item grid-item-6"><div class="grid-item-content">item 6</div></div>
+        <div class="grid-item grid-item-7"><div class="grid-item-content">item 7</div></div>
+        <div class="grid-item grid-item-8"><div class="grid-item-content">item 8</div></div>
+        <div class="grid-item grid-item-9 transition" data-category="transition"><div class="grid-item-content">item 9</div></div>
+        <div class="grid-item span-2 grid-item-10"><div class="grid-item-content">item 10</div></div>
+        <div class="grid-item grid-item-11"><div class="grid-item-content">item 11</div></div>
+        <div class="grid-item grid-item-12"><div class="grid-item-content">item 12</div></div>
+        <div class="grid-item span-2 grid-item-13"><div class="grid-item-content">item 13</div></div>
+        <div class="grid-item grid-item-14"><div class="grid-item-content">item 14</div></div>
+        <div class="grid-item grid-item-15"><div class="grid-item-content">item 15</div></div>
+        <div class="grid-item grid-item-16"><div class="grid-item-content">item 16</div></div>
+        <div class="grid-item span-3 grid-item-17"><div class="grid-item-content">item 17</div></div>
+        <div class="grid-item grid-item-18 transition" data-category="transition"><div class="grid-item-content">item 18</div></div>
+        <div class="grid-item grid-item-19"><div class="grid-item-content">item 19</div></div>
+        <div class="grid-item grid-item-20"><div class="grid-item-content">item 20</div></div>
+        <div class="grid-item span-2 grid-item-21"><div class="grid-item-content">item 21</div></div>
+        <div class="grid-item grid-item-22"><div class="grid-item-content">item 22</div></div>
+        <div class="grid-item grid-item-23"><div class="grid-item-content">item 23</div></div>
+        <div class="grid-item grid-item-24"><div class="grid-item-content">item 24</div></div>
+        <div class="grid-item grid-item-25"><div class="grid-item-content">item 25</div></div>
+        <div class="grid-item span-3 grid-item-26"><div class="grid-item-content">item 26</div></div>
+        <div class="grid-item grid-item-27"><div class="grid-item-content">item 27</div></div>
+        <div class="grid-item grid-item-28"><div class="grid-item-content">item 28</div></div>
+        <div class="grid-item grid-item-29"><div class="grid-item-content">item 29</div></div>
+        <div class="grid-item grid-item-30"><div class="grid-item-content">item 30</div></div>
+        <div class="grid-item grid-item-31 transition" data-category="transition"><div class="grid-item-content">item 31</div></div>
         <div class="grid-item grid-item-32">item 32</div>
         <div class="grid-item grid-item-33">item 33</div>
         <div class="grid-item grid-item-34">item 34</div>
@@ -288,13 +247,28 @@
         <div class="grid-item grid-item-41">item 41</div>
         <div class="grid-item grid-item-42">item 42</div>
         <div class="grid-item grid-item-43">item 43</div>
-        <div class="grid-item grid-item-44">item 44</div>
+        <div class="grid-item grid-item-44 transition" data-category="transition"><div class="grid-item-content">item 44</div></div>
         <div class="grid-item span-3 grid-item-45">item 45</div>
         <div class="grid-item grid-item-46">item 46</div>
         <div class="grid-item grid-item-47">item 47</div>
         <div class="grid-item grid-item-48">item 48</div>
         <div class="grid-item grid-item-49">item 49</div>
         <div class="grid-item grid-item-50">item 50</div>
-    </div>  
+    </div>  -->
+    <script>
+        var $grid = $('.grid');
+        $grid.isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+        $('.filter-button-group').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+        
+    </script>
 </body>
 </html>
