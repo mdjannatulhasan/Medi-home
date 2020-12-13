@@ -368,6 +368,7 @@
     display: block;
     text-transform: uppercase;
     padding-top:10px ;
+    background-color: white;
 }
 #activeSet .active{
     color: red;
