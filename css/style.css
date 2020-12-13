@@ -513,7 +513,7 @@
 }
 .hrW::before{
     position: absolute;
-    content:url('../images/h1/Wtriangle.png');
+    content:url('../images/h1/wTriangle.png');
     left: 33px;
     top: -5px;
 }
