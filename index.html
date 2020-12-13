@@ -922,5 +922,15 @@
         document.onmousedown = mousehandler;
         document.onmouseup = mousehandler;
     </script>
+    <!-- /********** active setter *********/ -->
+    <script>
+        var selector = '.activeSet button';
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
+    </script>
+
 </body>
 </html>
